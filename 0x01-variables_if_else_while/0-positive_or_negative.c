@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 
 /**
  * main - to print if the number is greater than 0,
@@ -29,5 +30,4 @@ n = rand() - RAND_MAX / 2;
 	print("%d is negative\n", n);
 	}
 	return (0);
-
 }

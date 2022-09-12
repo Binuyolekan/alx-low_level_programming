@@ -2,48 +2,40 @@
 
 /**
  * main - Entry point
- * Return: 0 Always Success
+ * Return:0 Always Success
  */
 
-
-
 int main(void)
-
 {
 
-	int i;
+	int i = 0, j;
 
-	int j;
-
-
-
-	for (i = 48; i < 58; i++)
+	while (i <= 9)
 
 	{
 
-	for (j = 48; j < 58; j++)
+	j = 0;
+	while (j <= 9)
 
 	{
-
 	if (i != j && i < j)
-
 	{
 
-	putchar(i);
+	putchar(i + 48);
+	putchar(j + 48);
 
-	putchar(j);
-
-	if (j == 57 && i == 56)
-
-	break;
-	}
+	if (i + j != 17)
+	{
 
 	putchar(',');
 	putchar(' ');
 	}
 
 	}
-
+	++j;
+	}
+	++i;
+	}
 	putchar('\n');
 
 	return (0);

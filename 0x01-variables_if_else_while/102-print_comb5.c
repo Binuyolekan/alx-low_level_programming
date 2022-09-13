@@ -2,37 +2,38 @@
 
 /**
  * main - Entry point
- *  Return:0 Always Success
+ * Return: 0 Always Success
  */
 
 int main(void)
-
 {
-	int i = 0, j;
+	int num1, num2;
 
-	while (i <= 99)
+	for (num1 = 0; num1 <= 98; num1++)
+
 	{
-	j = i;
-	while (j <= 99)
+
+	for (num2 = num1 + 1; num2 <= 99; num2++)
+
 	{
-	if (j != i)
-	{
-	putchar((i / 10) + 48);
-	putchar((i % 10) + 48);
+
+	putchar((num1 / 10) + '0');
+	putchar((num1 % 10) + '0');
 	putchar(' ');
-	putchar((j / 10) + 48);
-	putchar((j % 10) + 48);
+	putchar((num2 / 10) + '0');
+	putchar((num2 % 10) + '0');
 
-	if (i != 98 || j != 98)
-	{
+	if (num1 == 98 && num2 == 99)
+
+	continue;
+
 	putchar(',');
 	putchar(' ');
+
 	}
-	}
-	++j;
-	}
-	++i;
+
 	}
 	putchar('\n');
+
 	return (0);
 }

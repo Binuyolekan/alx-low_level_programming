@@ -3,16 +3,16 @@
 /**
  * int _strlen - string length function
  * @s: parameter
- * Return: int
+ * Return: return lrngth as integer;
  */
 
 int _strlen(char *s)
 {
-	int count = 0;
+	int len = 0;
 
-	while (s[count] != '\0')
-	{
-	count++;
-	}
-	return (count);
+	while (*(s + len) != '\0')
+
+	len++;
+
+	return (len);
 }
